@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+}
+
+.wrapper {
+    background-color: rgb(194, 155, 128);
+    min-height: 100vh;
+}
+
+.caja {
+    background-color: coral;
+    /* elige el más chico de dos valores */
+    width: min(300px, 25%);
+}
+
+.cajita {
+    background-color: burlywood;
+    /* max va a elegir al más grande de los dos valores */
+    width: max(300px, 25%);
+}
+
+.cajon {
+    background-color: azure;
+    /* puedo hacer operaciones matemáticas! simplemente sepado las opciones con una coma. Si la pantalla miediera 1000, el segundo valor sería 600px - 25px, entonces sería el más grande */
+    width: max(300px, 60% - 25px, 80% - 150px);
+}
